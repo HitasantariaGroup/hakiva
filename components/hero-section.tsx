@@ -17,7 +17,7 @@ export function HeroSection({
   imageAlt,
 }: HeroSectionProps) {
   return (
-    <section className="relative pt-[20px] bg-[#000E54] text-white md:py-24 md:rounded-br-[8rem]">
+    <section className="relative pt-[20px] bg-[#000E54] text-white md:py-24 overflow-x-hidden overflow-y-hidden md:rounded-br-[8rem]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:gap-8 md:grid-cols-2">
           <div className="flex flex-col justify-center">

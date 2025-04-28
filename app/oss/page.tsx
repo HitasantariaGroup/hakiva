@@ -22,25 +22,25 @@ import { MainNav } from "@/components/main-nav";
 export default function OSSPage() {
   const testimonials = [
     {
-      name: "Yoga",
+      name: "Yudhistira",
       role: "UMKM Makanan Ringan",
       content:
         "“Pelayanannya cepat, murah, dan nggak ribet. Cocok buat yang baru mulai usaha.”",
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/yudhistira.jpg",
     },
     {
-      name: "Siska",
+      name: "Tari",
       role: "Pemilik Usaha Skincare",
       content:
         "“Awalnya bingung banget isi OSS, tapi dibantuin semuanya dari awal sampai dapat NIB. Sekarang usaha udah punya legalitas!”",
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/tari.jpg",
     },
     {
-      name: "Joko",
+      name: "Rizkan",
       role: "Usaha Fotocopy & ATK",
       content:
         '"Saya pikir bikin NIB itu ribet dan harus ke kantor pemerintahan. Ternyata bisa online dan diurusin semuanya. Gak ribet sama sekali!"',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/rizkan.jpg",
     },
   ];
 
@@ -74,31 +74,31 @@ export default function OSSPage() {
             (Online Single Submission), dan jadi syarat utama untuk ngurus
             izin-izin usaha lainnya seperti:
           </p>
-          <div className="grid grid-cols-1 gap-2 md:grid-cols-5 text-center">
+          <div className="flex flex-wrap justify-center gap-2 md:grid-cols-5 text-center">
             <FeatureCard
               title="Izin Edar Makanan (PIRT, BPOM)"
               srcImage="/bpom.png"
-              row=""
+              row="w-[100%] md:w-[40%] lg:w-[18%]"
             />
             <FeatureCard
               title="Sertifikasi Halal"
               srcImage="logoHalal.png"
-              row=""
+              row="w-[100%] md:w-[40%] lg:w-[18%]"
             />
             <FeatureCard
               title="Buka Rekening Usaha"
               srcImage="dock.png"
-              row=""
+              row="w-[100%] md:w-[40%] lg:w-[18%]"
             />
             <FeatureCard
               title="Daftar ke Marketplace & Ikut Pelatihan UMKM"
               srcImage="shopping-cart.png"
-              row=""
+              row="w-[100%] md:w-[40%] lg:w-[18%]"
             />
             <FeatureCard
               title="Kerja Sama dengan Instansi Pemerintah"
               srcImage="building-2.png"
-              row=""
+              row="w-[100%] md:w-[40%] lg:w-[18%]"
             />
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function OSSPage() {
       {/* Difficulties Section */}
       <section className="md:py-16 py-10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:ps-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 lg:ps-8 md:grid-cols-2">
             <div className="flex flex-col justify-center">
               <h2 className="md:mb-6 mb-3 md:text-5xl/[1.2] text-xl font-bold text-center md:text-left">
                 Tapi Bikin NIB Sendiri{" "}
@@ -126,7 +126,7 @@ export default function OSSPage() {
                   alt=""
                   width={500}
                   height={625}
-                  className="rounded-lg"
+                  className="rounded-lg max-w-[300px] md:max-w-[350px] lg:max-w-full"
                 />
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function OSSPage() {
             Kami bantu kamu terbitkan NIB dan izin usaha secara cepat dan
             praktis, tanpa perlu repot utak-atik OSS sendiri.
           </p>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 items-center justify-items-center md:mx-[100px]">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 items-center justify-items-center md:mx-[40px] lg:mx-[100px]">
             <FeatureCard
               srcImage="/ossService1.png"
               title="Cocok untuk Semua Jenis Usaha"
@@ -188,24 +188,24 @@ export default function OSSPage() {
 
       {/* Comparison Section */}
       <section className="text-white md:py-16 py-10">
-        <div className="mx-auto md:px-[10rem] px-4 bg-[#000E54] pt-[5rem] pb-[5rem] md:pb-[0rem]">
+        <div className="mx-auto md:px-[10rem] lg:px-0 px-4 bg-[#000E54] pt-[5rem] pb-[5rem] lg:pb-[0rem]">
           <h2 className="mb-12 text-center text-3xl font-bold">
             Apa Itu NIB dan Kenapa{" "}
             <span className="text-[#0EBCF7]">Wajib Dimiliki</span> ?
           </h2>
-          <p className="mb-8 text-center text-white">
+          <p className="mb-8 text-center lg:px-[10rem] text-white">
             NIB (Nomor Induk Berusaha) itu adalah NIB yang wajib dimiliki. Tanpa
             NIB, usaha Anda dianggap ilegal dan berisiko ditutup di kemudian
             hari.
           </p>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3 items-start">
+          <div className="grid grid-cols-1 lg:px-[2rem] xl:px-[10rem] gap-5 justify-center lg:grid-cols-3 items-center">
             {/* Card 1 */}
             <Card className="p-5 flex flex-col justify-center self-start md:min-h-[350px]">
               <h3 className="mb-4 text-center text-xl font-bold text-red-500">
                 Tanpa NIB
               </h3>
               <ul className="space-y-4">
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className="items-start grid grid-cols-[30px_1fr]">
                   <svg
                     className="mr-2 h-5 w-5 text-red-500"
                     fill="none"
@@ -223,7 +223,7 @@ export default function OSSPage() {
                     Gak bisa daftar PIRT, BPOM, sertifikasi halal, dll.
                   </span>
                 </li>
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className=" items-start grid grid-cols-[30px_1fr]">
                   <svg
                     className="mr-2 h-5 w-5 text-red-500"
                     fill="none"
@@ -239,7 +239,7 @@ export default function OSSPage() {
                   </svg>
                   <span>Susah ikut program bantuan atau pelatihan UMKM.</span>
                 </li>
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className=" items-start grid grid-cols-[30px_1fr]">
                   <svg
                     className="mr-2 h-5 w-5 text-red-500"
                     fill="none"
@@ -255,7 +255,7 @@ export default function OSSPage() {
                   </svg>
                   <span>Gak bisa kerja sama dengan instansi resmi.</span>
                 </li>
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className=" items-start grid grid-cols-[30px_1fr]">
                   <svg
                     className="mr-2 h-5 w-5 text-red-500"
                     fill="none"
@@ -280,7 +280,7 @@ export default function OSSPage() {
               alt="Compare NIB"
               width={500}
               height={625}
-              className="hidden sm:block"
+              className="hidden mx-auto md:max-w-[300px] md:block"
             />
 
             {/* Card 2 */}
@@ -289,22 +289,22 @@ export default function OSSPage() {
                 Dengan NIB
               </h3>
               <ul className="space-y-4">
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className=" items-start grid grid-cols-[30px_1fr]">
                   <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                   <span>Usaha kamu diakui secara hukum.</span>
                 </li>
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className=" items-start grid grid-cols-[30px_1fr]">
                   <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                   <span>Bisa urus izin-izin lain dengan mudah.</span>
                 </li>
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className=" items-start grid grid-cols-[30px_1fr]">
                   <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                   <span>
                     Siap ekspansi, kerja sama, ikut tender, dan program
                     pemerintah.
                   </span>
                 </li>
-                <li className="flex items-start grid grid-cols-[30px_1fr]">
+                <li className=" items-start grid grid-cols-[30px_1fr]">
                   <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
                   <span>
                     Bisnis makin profesional di mata konsumen & investor.
@@ -378,14 +378,14 @@ export default function OSSPage() {
       {/* Pricing Section */}
       <section className="md:py-16 py-10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:px-[4rem]">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:px-[4rem]">
             <div className="flex items-center justify-center">
               <Image
                 src="/pricingOss.png"
                 alt="Consultant"
                 width={527}
                 height={527}
-                className="hidden sm:block absolute items-center ml-[2rem]"
+                className="hidden md:block absolute items-center max-w-[50%] lg:max-w-full ml-[2rem]"
               />
             </div>
             <div className="md:container col-span-2 flex flex-col justify-center md:shadow-[0px_0px_2px_4px_rgba(0,_0,_0,_0.1)] rounded-lg md:py-[4rem]">
@@ -415,7 +415,7 @@ export default function OSSPage() {
               </h3>
               <div className="text-center md:text-left">
                 <Link href="/">
-                  <Button className="item-center rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 md:text-lg text-xs">
+                  <Button className="item-center rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 px-4 text-[#000E54] hover:bg-blue-600 md:text-lg text-xs">
                     <Image
                       src="/WA.png"
                       alt="WhatsApp"

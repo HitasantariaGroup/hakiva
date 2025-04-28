@@ -12,25 +12,25 @@ import Link from "next/link";
 export default function HomePage() {
   const testimonials = [
     {
-      name: "Ahmad",
+      name: "Feti",
       role: "Pengusaha Kuliner",
       content:
         '"Proses pendaftaran merek sangat mudah dan cepat. Tim Hakiva sangat membantu dari awal hingga akhir."',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/feti.jpg",
     },
     {
-      name: "Sinta",
+      name: "Adrik",
       role: "Fashion Designer",
       content:
         '"Sangat puas dengan layanan Hakiva. Merek saya sekarang terlindungi secara hukum dengan biaya yang terjangkau."',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/adrik.jpg",
     },
     {
-      name: "Bagus",
+      name: "Yogi",
       role: "Startup Founder",
       content:
         '"Hakiva memberikan solusi yang tepat untuk perlindungan merek startup kami. Prosesnya transparan dan profesional."',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/yogi.jpg",
     },
   ];
 
@@ -274,7 +274,7 @@ export default function HomePage() {
             Kenapa Harus <span className="text-[#0EBCF7]">Pakai Jasa Kami</span>{" "}
             ?
           </h2>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center md:mx-[100px]">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center md:mx-[40px] lg:mx-[100px]">
             <FeatureCard
               srcImage="/why1.png"
               title="Cepat"
@@ -310,14 +310,14 @@ export default function HomePage() {
       {/* Consultation Section */}
       <section className="md:py-16 py-10">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:px-[4rem]">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:px-[4rem]">
             <div className="flex items-center justify-center">
               <Image
                 src="/consul.png"
                 alt="Consultant"
                 width={527}
                 height={527}
-                className="hidden sm:block absolute items-center mt-[-90px] ml-[1rem]"
+                className="hidden sm:block absolute items-center max-w-[50%] lg:max-w-full mt-[-90px] ml-[1rem]"
               />
             </div>
             <div className="md:container col-span-2 flex flex-col justify-center md:shadow-[0px_0px_2px_4px_rgba(0,_0,_0,_0.1)] rounded-lg md:py-[4rem]">
@@ -364,7 +364,7 @@ export default function HomePage() {
       {/* Pricing */}
       <section className="md:py-16 py-10">
         <div className="container mx-auto px-4">
-          <h2 className="mb-12 text-center text-3xl font-bold md:text-5xl text-2xl">
+          <h2 className="mb-12 text-center font-bold md:text-5xl text-2xl">
             Pendaftaran HAKI
           </h2>
           <div className="grid md:grid-cols-2 md:px-[2rem] gap-10 grid-cols-[300px] justify-center ">
@@ -373,7 +373,7 @@ export default function HomePage() {
                 Paket Standar
               </h3>
               <div className="md:mb-10 mb-5 text-center">
-                <span className="text-sm line-through text-semibold md:text-3xl text-base">
+                <span className="text-sm line-through text-semibold md:text-3xl">
                   IDR 2.500.000
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
@@ -394,7 +394,7 @@ export default function HomePage() {
               <p className="md:mb-10 mb-5 md:text-lg text-[10px]">
                 Bonus : GRATIS 3 Kali cek merek manual
               </p>
-              <div className="md:mb-4 mb-2 grid grid-cols-2 text-[#47F3FA] grid-cols-[30px_1fr] md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
+              <div className="md:mb-4 mb-2 grid grid-cols-2 text-[#47F3FA] md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
                 <p>Note :</p>
                 <p>
                   ⁽¹⁾ Setelah draft pendaftaran merek disetujui ⁽²⁾ Sertifikat
@@ -402,7 +402,7 @@ export default function HomePage() {
                   pengumuman, berlangsung sekitar ± 6 hingga 18 bulan
                 </p>
               </div>
-              <div className="md:mb-10 mb-5 grid grid-cols-2 text-[#47F3FA] grid-cols-[10px_1fr] md:grid-cols-[15px_1fr] md:text-xs text-[8px]/[1.5]">
+              <div className="md:mb-10 mb-5 grid grid-cols-2 text-[#47F3FA] md:grid-cols-[15px_1fr] md:text-xs text-[8px]/[1.5]">
                 <p>⁽*⁾</p>
                 <p>
                   Harga diatas tidak termasuk biaya pengajuan banding bila
@@ -428,7 +428,7 @@ export default function HomePage() {
                 Paket Premium
               </h3>
               <div className="md:mb-10 mb-5 text-center">
-                <span className="text-sm line-through text-semibold md:text-3xl text-base">
+                <span className="line-through text-semibold md:text-3xl text-base">
                   IDR 2.800.000
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
@@ -453,7 +453,7 @@ export default function HomePage() {
                 <li>2 pilihan logo</li>
                 <li>File master</li>
               </ol>
-              <div className="md:mb-4 mb-2 grid grid-cols-2 text-[#47F3FA] grid-cols-[30px_1fr] md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
+              <div className="md:mb-4 mb-2 grid grid-cols-2 text-[#47F3FA]  md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
                 <p>Note :</p>
                 <p>
                   ⁽¹⁾ Setelah draft pendaftaran merek disetujui ⁽²⁾ Sertifikat
@@ -461,7 +461,7 @@ export default function HomePage() {
                   pengumuman, berlangsung sekitar ± 6 hingga 18 bulan
                 </p>
               </div>
-              <div className="md:mb-10 mb-5 grid grid-cols-2 text-[#47F3FA] grid-cols-[10px_1fr] md:grid-cols-[15px_1fr] md:text-xs text-[8px]/[1.5]">
+              <div className="md:mb-10 mb-5 grid grid-cols-2 text-[#47F3FA]  md:grid-cols-[15px_1fr] md:text-xs text-[8px]/[1.5]">
                 <p>⁽*⁾</p>
                 <p>
                   Harga diatas tidak termasuk biaya pengajuan banding bila

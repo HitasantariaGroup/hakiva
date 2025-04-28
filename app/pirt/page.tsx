@@ -21,25 +21,25 @@ import Image from "next/image";
 export default function PIRTPage() {
   const testimonials = [
     {
-      name: "Siti",
+      name: "Tari",
       role: "Pengusaha Kue Kering",
       content:
         '"Proses pengurusan PIRT sangat mudah dan cepat. Tim Hakiva sangat membantu dari awal hingga akhir. Sekarang produk saya bisa masuk supermarket!"',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/tari.jpg",
     },
     {
-      name: "Budi",
+      name: "Rizkan",
       role: "Pengusaha Frozen Food",
       content:
         '"Saya tidak tahu harus mulai dari mana untuk mengurus PIRT. Hakiva membantu semuanya dari awal sampai akhir. Prosesnya cepat dan tidak ribet."',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/rizkan.jpg",
     },
     {
-      name: "Dewi",
+      name: "Sastra",
       role: "Pengusaha Katering",
       content:
         '"Terima kasih Hakiva! Berkat PIRT, bisnis katering saya jadi lebih dipercaya pelanggan. Prosesnya mudah dan tim sangat responsif menjawab semua pertanyaan saya."',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/sastra.jpg",
     },
   ];
 
@@ -71,7 +71,7 @@ export default function PIRTPage() {
             Yuk mulai waspada. Karena tanpa PIRT, produk kamu belum diakui aman
             dan legal secara hukum. Dan risikonya bukan main-main:
           </p>
-          <div className="grid grid-cols-1 gap-2 md:grid-cols-4 text-center">
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 text-center">
             <FeatureCard
               title="Produk kamu bisa ditolak di marketplace atau retail."
               srcImage="/alert.png"
@@ -107,7 +107,7 @@ export default function PIRTPage() {
           <p className="md:text-lg text-sm text-center mb-8 text-[#5B5B5B]">
             Cuma di tempat kami kamu bisa dapet:
           </p>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center md:mx-[100px]">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center md:mx-[40px] lg:mx-[100px]">
             <FeatureCard
               srcImage="/why1.png"
               title="Proses Super Cepat"
@@ -243,13 +243,13 @@ export default function PIRTPage() {
       <section className="md:py-16 py-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 md:px-[4rem]">
-            <div className="flex items-center justify-center">
+            <div className="md:flex items-center justify-center hidden">
               <Image
                 src="/consul.png"
                 alt="Consultant"
                 width={527}
                 height={527}
-                className="hidden sm:block absolute items-center mt-[-90px] ml-[2rem]"
+                className="hidden sm:block absolute items-center max-w-[50%] lg:max-w-full mt-[-90px] ml-[2rem]"
               />
             </div>
             <div className="md:container col-span-2 flex flex-col justify-center md:shadow-[0px_0px_2px_4px_rgba(0,_0,_0,_0.1)] rounded-lg md:py-[4rem]">
@@ -288,7 +288,7 @@ export default function PIRTPage() {
           <h2 className="mb-12 text-center text-3xl font-bold md:text-5xl text-2xl">
             Pendaftaran PIRT
           </h2>
-          <div className="grid md:grid-cols-3 grid-cols-[300px] gap-10 justify-center ">
+          <div className="grid lg:grid-cols-3 grid-cols-[300px] md:grid-cols-[500px] gap-10 justify-center ">
             <div className="overflow-hidden rounded-lg bg-[#000E54] md:p-8 p-4 text-white flex flex-col h-full ">
               <h3 className="mb-4 text-center md:text-5xl text-2xl font-semibold">
                 Paket Basic

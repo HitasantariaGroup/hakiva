@@ -36,12 +36,12 @@ export function TestimonialSection({
                     height={48}
                   />
                 </div>
-                <div>
+                <div className="flex-1 text-sm">
                   <h3 className="font-semibold">{testimonial.name}</h3>
                   <p className="text-gray-500 ">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="text-gray-600">{testimonial.content}</p>
+              <p className="text-gray-600 text-sm">{testimonial.content}</p>
             </Card>
           ))}
         </div>

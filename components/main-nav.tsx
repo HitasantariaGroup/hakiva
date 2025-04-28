@@ -22,6 +22,16 @@ export function MainNav() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const konsultasiLinks: Record<string, string> = {
+    "/": "https://nanya.online/hakiva-haki",
+    "/pirt": "https://nanya.online/hakiva-pirt",
+    "/oss": "https://nanya.online/hakiva-oss",
+    "/halal": "https://nanya.online/hakiva-halal",
+  };
+  
+  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://nanya.online/hakiva-haki";
+  
+
   return (
     <header className="sticky top-0 z-50 w-full bg-[#000E54] text-white">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -56,7 +66,7 @@ export function MainNav() {
         </nav>
 
         <div className="hidden md:block">
-          <Link href="/" className="flex items-center">
+          <Link href={currentKonsultasiLink} className="flex items-center">
             <Button className="rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 md:text-[16px] text-xs">
               <Image
                 src="/WA.png"
@@ -106,7 +116,7 @@ export function MainNav() {
               </Link>
             ))}
             <div className="mt-4 px-3">
-              <Link href="/">
+              <Link href={currentKonsultasiLink}>
                 <Button className="w-full item-center rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-[16px]">
                   <Image
                     src="/WA.png"

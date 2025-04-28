@@ -19,25 +19,25 @@ import { MainNav } from "@/components/main-nav";
 export default function HalalPage() {
   const testimonials = [
     {
-      name: "Siti",
+      name: "Tari",
       role: "Pengusaha Kue Kering",
       content:
         '""Pakai jasa Hakiva tuh ngebantu banget. Cepat, jelas, dan nggak ribet sama sekali!"',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/tari.jpg",
     },
     {
-      name: "Dewi Lestari",
+      name: "Feti",
       role: "Owner Nayra Beauty",
       content:
         '"Proses daftar halal ternyata nggak seribet yang saya bayangin. Tim Hakiva jelasin step by step dan bantuin ngurus semuanya sampai sertifikat halal keluar. Usaha jadi makin dipercaya !"',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/feti.jpg",
     },
     {
-      name: "Rizal",
+      name: "Rizkan",
       role: "Owner Minuman Herbal Rizherb",
       content:
         '"Awalnya nggak paham prosesnya, tapi dibimbing terus sama tim Hakiva. Sekarang usaha herbal saya udah halal!"',
-      imageSrc: "/placeholder.svg?height=48&width=48",
+      imageSrc: "/rizkan.jpg",
     },
   ];
 
