@@ -286,6 +286,7 @@ export default function HalalPage() {
           original: "IDR 350.000",
           discounted: "IDR 150.000",
         }}
+        href="https://nanya.online/hakiva-halal"
       />
 
       {/* Footer */}

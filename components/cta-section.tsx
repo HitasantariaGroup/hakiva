@@ -11,6 +11,7 @@ interface CTASectionProps {
     original: string;
     discounted: string;
   };
+  href: string;
 }
 
 export function CTASection({
@@ -18,6 +19,7 @@ export function CTASection({
   description,
   buttonText,
   price,
+  href,
 }: CTASectionProps) {
   return (
     <section className="md:mb-[5rem] justify-center py-16 text-white">
@@ -42,7 +44,7 @@ export function CTASection({
             </div>
           )}
 
-          <Link href="/">
+          <Link href={href}>
             <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 md:text-lg text-xs">
               <Image
                 src="/WA.png"

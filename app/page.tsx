@@ -331,7 +331,7 @@ export default function HomePage() {
                 brand Anda.
               </p>
               <div className="text-center md:text-left">
-                <Link href="/">
+                <Link href="https://nanya.online/hakiva-haki">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 md:text-lg text-xs">
                     <Image
                       src="/WA.png"
@@ -410,7 +410,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="text-center mt-auto">
-                <Link href="/">
+                <Link href="https://nanya.online/hakiva-haki">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -469,7 +469,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="text-center mt-auto">
-                <Link href="/">
+                <Link href="https://nanya.online/hakiva-haki">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -496,6 +496,7 @@ export default function HomePage() {
         }
         description="Kalau kamu udah mantap, tinggal klik tombol di bawah ini. Kami siap bantu urus semuanya dari A sampai Z. Mulai dari pengecekan, pengajuan, sampai merek kamu resmi terdaftar di HAKI."
         buttonText="Konsultasi Sekarang"
+        href="https://nanya.online/hakiva-haki"
       />
 
       {/* Footer */}
