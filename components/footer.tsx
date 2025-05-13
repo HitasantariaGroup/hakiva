@@ -116,7 +116,7 @@ export function Footer() {
                   <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                 </svg>
               </Link>
-              <Link href="" target="_blank" className="hover:text-[#0EBCF7]">
+              <Link href="https://www.youtube.com/@hakiva" target="_blank" className="hover:text-[#0EBCF7]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
