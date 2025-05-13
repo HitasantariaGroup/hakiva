@@ -486,6 +486,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="max-w-4xl md:mx-auto p-6 md:p-12 mx-2 bg-[#001550] text-white rounded-xl shadow-lg">
+        <div className="text-center space-y-6">
+          {/* Main Heading */}
+          <div className="space-y-2 text-center">
+            <h1 className="text-3xl md:text-5xl font-bold">Masi Ragu Untuk Daftar?</h1>
+            <h2 className="text-3xl md:text-5xl font-bold">Cek Merek Aja Dulu</h2>
+          </div>
+
+          {/* Price Section */}
+          <div className="space-y-2 pt-4">
+            <p className="text-2xl font-medium">
+              Dari Harga <span className="line-through">IDR 350.000</span>
+            </p>
+            <p className="text-2xl font-medium">
+              Menjadi <span className="text-yellow-400 text-4xl font-bold">IDR 80.000</span>
+            </p>
+          </div>
+
+          {/* Process Time */}
+          <div className="pt-4">
+            <p className="text-sm">Lama Proses : 1-2 hari kerja (1)</p>
+          </div>
+
+          {/* What You Get */}
+          <div className="text-left pt-2 mx-10">
+            <p className="mb-2">Yang diperoleh :</p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>2 Kali Cek Merek Manual</li>
+              <li>Ringkasan Daftar Merek Pembanding</li>
+              <li>Rekomendasi merek dapat didaftarkan atau tidak</li>
+            </ul>
+          </div>
+
+          {/* CTA Button */}
+          <div className="pt-6">
+            <Link href="https://nanya.online/hakiva-haki">
+              <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
+                <Image
+                  src="/WA.png"
+                  alt="WhatsApp"
+                  width={24.24530029296875}
+                  height={19}
+                />
+                Konsultasi Sekarang
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* CTA Section */}
       <CTASection
         title={
