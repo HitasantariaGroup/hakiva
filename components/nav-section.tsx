@@ -24,7 +24,7 @@ export function NavSection() {
   };
 
   return (
-    <div className= "flex flex-row -mt-4 justify-center gap-8 items-center bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] py-10" >
+    <div className= "grid grid-cols-1 justify-items-center md:flex flex-row -mt-4 justify-center gap-8 flex-wrap items-center bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] py-10" >
         {navLinks.map((link) => (
             <Link href={link.href} key={link.href} >
                 <Button
