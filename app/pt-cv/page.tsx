@@ -24,17 +24,17 @@ import Image from "next/image";
 export default function PT_CVPage() {
   const testimonials = [
     {
-      name: "Andika",
-      role: "Founder Startup Edukasi",
+      name: "Adrik",
+      role: "pemilik studio foto",
       content:
-        'Awalnya saya pikir bikin PT itu mahal dan ribet. Tapi bareng Hakiva, semua terasa gampang. Bahkan saya nggak perlu bolak-balik. Semua dijelaskan dengan jelas."',
-      imageSrc: "/sastra.jpg",
+        '"Awalnya saya pikir bikin PT itu mahal dan ribet. Tapi bareng Hakiva, semua terasa gampang. Bahkan saya nggak perlu bolak-balik. Semua dijelaskan dengan jelas."',
+      imageSrc: "/adrik.jpg",
     },
     {
       name: "Andika",
       role: "Founder Startup Edukasi",
       content:
-        '"Awalnya saya pikir bikin PT itu mahal dan ribet. Tapi bareng Hakiva, semua terasa gampang. Bahkan saya nggak perlu bolak-balik. Semua dijelaskan dengan jelas."',
+        '"Proses pembuatan PT bersama Hakiva sangat mudah dan cepat. Timnya sangat membantu dan profesional dalam menjelaskan setiap langkahnya. Saya sangat puas dengan pelayanannya."',
       imageSrc: "/sastra.jpg",
     },
     {
@@ -193,12 +193,11 @@ export default function PT_CVPage() {
           </div>
         </div>
       </section>
-      <div className="divider my-20"></div>
 
       {/* Our Services */}
-      <section className="md:py-16 py-8">
+      <section className="md:py-16 py-8 my-10">
         <div className="container mx-auto px-4">
-          <h2 className="md:mb-12 mb-6 text-center md:text-5xl/[1.2] text-2xl font-bold">
+          <h2 className="mb-6 text-center md:text-5xl/[1.2] text-2xl font-bold">
             Layanan{" "}
             <span className="text-[#0EBCF7]">Hakiva</span>{" "}
           </h2>
@@ -396,11 +395,13 @@ export default function PT_CVPage() {
           </div>
         </div>
         <div className="container mx-auto px-4">
-          <h2 className="mb-12 mt-[150px] text-center text-3xl font-bold md:text-5xl text-2xl">
+          <h2 className="mb-12 mt-20 text-center text-3xl font-bold md:text-5xl text-2xl">
             Pendirian PT (Badan Usaha Mikro)
           </h2>
-          <div className="grid px-[200px]  lg:grid-cols-2 grid-cols-[300px] md:grid-cols-[500px] gap-16 justify-center ">
-            <div className="overflow-hidden rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
+
+          
+          <div className="grid  lg:grid-cols-2 max-w-[900px] justify-center items-center md:pt-5 grid-cols-[300px] md:grid-cols-[500px] gap-12 mx-auto justify-center ">
+            <div className="overflow-hidden  rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
               <h3 className="mb-4 text-center md:text-4xl text-2xl font-semibold">
                 Paket Standar
               </h3>
@@ -492,11 +493,11 @@ export default function PT_CVPage() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 my-20">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-5xl text-2xl">
              Paket Pendirian yayasan
           </h2>
-          <div className="grid lg:grid-cols-[500px] grid-cols-[300px] md:grid-cols-[500px] justify-center ">
+          <div className="grid lg:grid-cols-1 max-w-[450px] mx-auto grid-cols-[300px] md:grid-cols-[500px] justify-center ">
             <div className="overflow-hidden rounded-lg bg-[#000E54] md:p-8 p-4 text-white flex flex-col h-full ">
               <h3 className="mb-4 text-center md:text-5xl text-2xl font-semibold">
                 Paket Standar
