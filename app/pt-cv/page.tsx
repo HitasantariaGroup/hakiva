@@ -395,12 +395,12 @@ export default function PT_CVPage() {
           </div>
         </div>
         <div className="container mx-auto px-4">
-          <h2 className="mb-12 mt-[150px] text-center text-3xl font-bold md:text-5xl text-2xl">
+          <h2 className="mb-12 mt-20 text-center text-3xl font-bold md:text-5xl text-2xl">
             Pendirian PT (Badan Usaha Mikro)
           </h2>
 
           
-          <div className="grid  lg:grid-cols-2 max-w-[900px] justify-center items-center md:py-20 grid-cols-[300px] md:grid-cols-[500px] gap-12 mx-auto justify-center ">
+          <div className="grid  lg:grid-cols-2 max-w-[900px] justify-center items-center md:pt-5 grid-cols-[300px] md:grid-cols-[500px] gap-12 mx-auto justify-center ">
             <div className="overflow-hidden  rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
               <h3 className="mb-4 text-center md:text-4xl text-2xl font-semibold">
                 Paket Standar
@@ -493,7 +493,7 @@ export default function PT_CVPage() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 my-20">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-5xl text-2xl">
              Paket Pendirian yayasan
           </h2>
