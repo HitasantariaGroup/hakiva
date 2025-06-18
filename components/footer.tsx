@@ -34,6 +34,11 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 md:text-sm text-gray-300 text-xs">
               <li>
+                <Link href="/pt-cv" className="hover:text-[#0EBCF7]">
+                  PT/CV
+                </Link>
+              </li>
+              <li>
                 <Link href="/" className="hover:text-[#0EBCF7]">
                   HAKI
                 </Link>

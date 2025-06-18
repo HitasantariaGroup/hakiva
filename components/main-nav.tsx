@@ -12,7 +12,9 @@ export function MainNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: "HAKI" },
+    { href: "/", label: "Home" },
+    { href: "/pt-cv", label: "PT/CV" },
+    { href: "/haki", label: "HAKI" },
     { href: "/pirt", label: "PIRT" },
     { href: "/oss", label: "OSS" },
     { href: "/halal", label: "Halal" },
