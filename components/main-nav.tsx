@@ -12,7 +12,9 @@ export function MainNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: "HAKI" },
+    { href: "/", label: "Home" },
+    { href: "/pt-cv", label: "PT/CV" },
+    { href: "/haki", label: "HAKI" },
     { href: "/pirt", label: "PIRT" },
     { href: "/oss", label: "OSS" },
     { href: "/halal", label: "Halal" },
@@ -24,6 +26,8 @@ export function MainNav() {
 
   const konsultasiLinks: Record<string, string> = {
     "/": "https://nanya.online/hakiva-haki",
+    "/pt-cv": "https://nanya.online/hakiva-pt-cv",
+    "/haki": "https://nanya.online/hakiva-haki",
     "/pirt": "https://nanya.online/hakiva-pirt",
     "/oss": "https://nanya.online/hakiva-oss",
     "/halal": "https://nanya.online/hakiva-halal",
