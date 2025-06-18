@@ -26,6 +26,8 @@ export function MainNav() {
 
   const konsultasiLinks: Record<string, string> = {
     "/": "https://nanya.online/hakiva-haki",
+    "/pt-cv": "https://nanya.online/hakiva-pt-cv",
+    "/haki": "https://nanya.online/hakiva-haki",
     "/pirt": "https://nanya.online/hakiva-pirt",
     "/oss": "https://nanya.online/hakiva-oss",
     "/halal": "https://nanya.online/hakiva-halal",
