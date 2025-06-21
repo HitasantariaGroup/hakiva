@@ -215,7 +215,7 @@ export default function PT_CVPage() {
               md:grid  items-center w-full h-full"
             />
             <FeatureCard2
-              srcImage="/pendirian-pt&yayasan.png"
+              srcImage="/pendirian-PT&Yayasan.png"
               title="Pendirian PT & Yayasan"
               description="Pilihan ideal untuk usaha yang mau berkembang besar. 
               Kami urus dari akta notaris, SK Kemenkumham, NIB, hingga dokumen pendukung lainnya."
@@ -231,7 +231,7 @@ export default function PT_CVPage() {
               row="grid grid-cols-1 md:grid items-center w-full h-full"
             />
             <FeatureCard2
-              srcImage="/konsultasi-legalitas-gratis.png"
+              srcImage="/Konsultasi-Legalitas-gratis.png"
               title="Konsultasi Legalitas Gratis"
               description="Belum tahu bentuk usaha mana yang paling cocok? Konsultasi dulu aja, gratis dan tanpa komitmen."
               bgColor="bg-[#EDEDED]"
@@ -407,17 +407,17 @@ export default function PT_CVPage() {
               </h3>
               <div className="md:mb-10 mb-5 text-center">
                 <span className="text-sm line-through text-semibold md:text-3xl text-base">
-                  IDR 3.800.000
+                  IDR 6.500.000
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
-                  IDR 2.250.000
+                  IDR 4.000.000
                 </p>
               </div>
               <p className="md:mb-4 mb-2 md:text-lg text-xs">
                 Lama proses : 2-4 hari kerja ⁽¹⁾
               </p>
               <ol className="md:mb-4 mb-2 list-disc list-inside text-white md:text-base text-[10px]">
-                <li>Pengecekan & Pendaftaran nama CV</li>
+                <li>Pengecekan & Pendaftaran nama PT</li>
                 <li>KBLI Badan Usaha</li>
                 <li>Akta Notaris</li>
                 <li>SK Kemenkumham</li>
@@ -451,17 +451,17 @@ export default function PT_CVPage() {
               </h3>
               <div className="md:mb-10 mb-5 text-center">
                 <span className="text-sm line-through text-semibold md:text-3xl text-base">
-                  IDR 4.500.000
+                  IDR 7.500.000
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
-                  IDR 2.500.000
+                  IDR 4.500.000
                 </p>
               </div>
               <p className="md:mb-4 mb-2 md:text-lg text-xs">
                 Lama proses : 2-5 hari kerja ⁽¹⁾
               </p>
               <ol className="md:mb-4 mb-2 list-disc list-inside text-white md:text-base text-[10px]">
-                <li>Pengecekan & Pendaftaran nama CV</li>
+                <li>Pengecekan & Pendaftaran nama PT</li>
                 <li>KBLI Badan Usaha</li>
                 <li>Akta Notaris</li>
                 <li>SK Kemenkumham</li>
