@@ -271,7 +271,7 @@ export default function HAKIPage() {
       <section className="md:py-16 py-8">
         <div className="container mx-auto px-4">
           <h2 className="mb-12 text-center md:text-5xl text-2xl font-bold">
-            Kenapa Harus <span className="text-[#0EBCF7]">Pakai Jasa Kami</span>{" "}
+            Kenapa Harus <span className="text-[#0EBCF7]">Pakai Jasa Kami{" "}</span>
             ?
           </h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center md:mx-[40px] lg:mx-[100px]">
