@@ -9,7 +9,7 @@ export function NavSection() {
     { href: "/pt-cv", label: "PT/CV" },
     { href: "/haki", label: "HAKI" },
     { href: "/pirt", label: "PIRT" },
-    { href: "/oss", label: "OSS" },
+    { href: "/nib", label: "NIB" },
     { href: "/halal", label: "HALAL" },
   ];
 
