@@ -72,7 +72,7 @@ export default function PT_CVPage() {
             <span className="text-[#0EBCF7]"> Termurah Se Indonesia!</span>{" "}
           </>
         }
-        description="Dengan harga mulai dari Rp1 jutaan, 
+        description="Dengan harga mulai dari Rp 1 jutaan, 
         kamu udah dapat semua yang dibutuhkan: Akta Notaris, 
         SK Kemenkumham, NIB, NPWP, OSS, bahkan desain logo usaha!"
         additionalText="Harga terjangkau bukan berarti murahan. Di Hakiva, semua 

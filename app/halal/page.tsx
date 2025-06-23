@@ -174,19 +174,19 @@ export default function HalalPage() {
                 <li className="flex items-start">
                   <CheckCircle className="mr-2 h-6 w-6 text-green-500" />
                   <span className="my-auto">
-                    Sudah memenuhi standar kebersihan & keamanan
+                    Pendampingan input dokumen ke SIHALAL
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="mr-2 h-6 w-6 text-green-500" />
                   <span className="my-auto">
-                    Layak untuk dipasarkan secara umum
+                    Gratis panduan & bimbingan Sistem Jaminan Halal (SJH).
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="mr-2 h-6 w-6 text-green-500" />
                   <span className="my-auto">
-                    Siap masuk ke marketplace, toko modern, bahkan ekspor
+                    Harga terjangkau, proses aman dan transparan.
                   </span>
                 </li>
               </ul>
@@ -277,7 +277,7 @@ export default function HalalPage() {
         title={
           <>
             Yuk, <span className="text-[#0EBCF7]">Daftar Halal Sekarang</span>{" "}
-            Sebelum Terlambat !
+            Sebelum Terlambat!
           </>
         }
         description="Gak perlu ribet, kamu tinggal serahkan ke kami — dan kamu bisa fokus jualan & ngembangin usaha."

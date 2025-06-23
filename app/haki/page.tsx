@@ -47,7 +47,7 @@ export default function HAKIPage() {
             Terlambat!
           </>
         }
-        description="Kamu udah capek-capek bangun brand... jangan sampai direbut orang lain cuma karena belum daftar merek."
+        description="Kamu udah capek-capek bangun brand, jangan sampai direbut orang lain cuma karena belum daftar merek."
         imageSrc="/herohaki.png"
         additionalText="Daftar merek itu bukan cuma formalitas, ini adalah langkah penting buat mengamankan identitas usaha kamu."
         imageAlt="Woman with laptop"
