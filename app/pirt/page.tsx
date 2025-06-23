@@ -145,7 +145,7 @@ export default function PIRTPage() {
             <FeatureCard
               srcImage="/pirtservice3.png"
               title="Bayar Setelah Jadi"
-              description="Invoice akan ditagih setelah sertifikatterbit."
+              description="Invoice akan ditagih setelah sertifikat terbit."
               bgColor="bg-[#EDEDED]"
               row="grid grid-cols-1 md:grid md:grid-cols-[100px_1fr] grid-cols-[90px_1fr] items-center w-full h-full"
             />
@@ -205,8 +205,7 @@ export default function PIRTPage() {
                 Tanpa PIRT, Usaha Kamu{" "}
                 <span className="text-[#0EBCF7]">
                   Nggak Akan Bisa Berkembang Jauh.
-                </span>{" "}
-                ?
+                </span>
               </h2>
               <h3 className="md:mb-[20px] mb-[10px] md:text-3xl text-base font-semibold text-center md:text-left">
                 Tapi dengan PIRT, usaha kamu bisa naik kelas dan lebih dipercaya
@@ -251,8 +250,8 @@ export default function PIRTPage() {
                 className="hidden sm:block absolute items-center max-w-[50%] lg:max-w-full mt-[-90px] ml-[2rem]"
               />
             </div>
-            <div className="md:container col-span-2 flex flex-col justify-center md:shadow-[0px_0px_2px_4px_rgba(0,_0,_0,_0.1)] rounded-lg md:py-[4rem]">
-              <h2 className="mb-4 font-bold md:text-5xl text-2xl text-center md:text-left">
+            <div className="md:container col-span-2 flex flex-col justify-center md:shadow-[0px_0px_2px_4px_rgba(0,_0,_0,_0.1)] rounded-lg md:py-[2rem]">
+              <h2 className="mb-6 font-bold md:text-5xl text-2xl text-center md:text-left">
                 Cuma Satu Hari, Harga Hemat, dan Ada Bonus{" "}
                 <span className="text-[#0EBCF7]">GRATIS !</span>
               </h2>
