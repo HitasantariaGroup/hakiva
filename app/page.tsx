@@ -15,7 +15,8 @@ import { NavSection } from "@/components/nav-section";
 export default function HomePage() {
   const pathname = usePathname();
   const konsultasiLinks: Record<string, string> = {
-    "/": "https://nanya.online/hakiva-haki",
+    "/": "https://nanya.online/hakiva-home",
+    "/haki": "https://nanya.online/hakiva-haki",
     "/pirt": "https://nanya.online/hakiva-pirt",
     "/oss": "https://nanya.online/hakiva-oss",
     "/halal": "https://nanya.online/hakiva-halal",
@@ -212,9 +213,9 @@ export default function HomePage() {
                 Gratis Konsultasi Tanpa Komitmen
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                Masih bingung mau pilih CV, PT, atau Yayasan? Tenang,
-                kamu bisa konsultasi dulu GRATIS. Kami bantu analisa
-                kebutuhan usaha kamu dan kasih saran terbaik.
+                Masih bingung legalitas usaha mana yang cocok buat usaha kamu? 
+                Tenang, kamu bisa konsultasi dulu GRATIS. 
+                Kami bantu analisa kebutuhan usaha kamu dan kasih saran terbaik. 
                 Tanpa biaya, tanpa paksaan.
               </p>
             </Card>
@@ -232,10 +233,10 @@ export default function HomePage() {
                 Aman & Legal
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                Masih bingung mau pilih CV, PT, atau Yayasan?
-                Tenang, kamu bisa konsultasi dulu GRATIS.
-                Kami bantu analisa kebutuhan usaha kamu dan
-                kasih saran terbaik. Tanpa biaya, tanpa paksaan..
+                Seluruh proses dijalankan melalui jalur resmi dan 
+                sesuai peraturan yang berlaku. 
+                Kami hanya menggunakan prosedur yang sah dan sesuai 
+                hukum tanpa jalan pintas.
               </p>
             </Card>
             <Card className="p-6 shadow-lg">
@@ -320,7 +321,7 @@ export default function HomePage() {
                 Kami percaya bahwa legalitas yang kuat adalah fondasi bisnis yang
                 sehat. Oleh karena itu, Hakiva berkomitmen untuk memberikan layanan
                 yang tidak hanya profesional, tetapi juga mudah diakses dan dipahami
-                oleh siapa pun—baik Anda pelaku UMKM, startup, maupun perusahaan
+                oleh siapa pun baik Anda pelaku UMKM, startup, maupun perusahaan
                 yang sedang berkembang.
               </span>
 
@@ -354,7 +355,7 @@ export default function HomePage() {
                 Anda dan memberikan solusi yang sesuai dengan kebutuhan bisnis Anda.
               </p>
               <div className="text-center md:text-left">
-                <Link href="https://nanya.online/hakiva-haki">
+                <Link href={currentKonsultasiLink}>
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 md:text-lg text-xs">
                     <Image
                       src="/WA.png"

@@ -1,3 +1,4 @@
+"use client";
 import { MainNav } from "@/components/main-nav";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
@@ -20,6 +21,7 @@ import {
   FileCheck,
 } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function PT_CVPage() {
   const testimonials = [
@@ -31,20 +33,31 @@ export default function PT_CVPage() {
       imageSrc: "/adrik.jpg",
     },
     {
-      name: "Andika",
+      name: "Sastra",
       role: "Founder Startup Edukasi",
       content:
         '"Proses pembuatan PT bersama Hakiva sangat mudah dan cepat. Timnya sangat membantu dan profesional dalam menjelaskan setiap langkahnya. Saya sangat puas dengan pelayanannya."',
       imageSrc: "/sastra.jpg",
     },
     {
-      name: "Maya",
+      name: "Tari",
       role: "Pemilik Toko Kue Online",
       content:
         '"Saya senang banget sama cara tim Hakiva komunikasi. Mereka sabar banget jawab pertanyaan saya. Hasilnya cepat dan rapi"',
       imageSrc: "/tari.jpg",
     },
   ];
+  const pathname = usePathname();
+  const konsultasiLinks: Record<string, string> = {
+    "/": "https://nanya.online/hakiva-home",
+    "/pt-cv": "https://nanya.online/hakiva-PT,CV,YY",
+    "/haki": "https://nanya.online/hakiva-haki",
+    "/pirt": "https://nanya.online/hakiva-pirt",
+    "/oss": "https://nanya.online/hakiva-oss",
+    "/halal": "https://nanya.online/hakiva-halal",
+  };
+  const currentKonsultasiLink =
+    konsultasiLinks[pathname] || "https://nanya.online/hakiva-haki";
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -55,8 +68,8 @@ export default function PT_CVPage() {
       <HeroSection
         title={
           <>
-            Pendirian CV, PT,& Yayasan <span className="text-[#0EBCF7]"> Termurah
-            Se Indonesia!</span>{" "}
+            Pendirian CV, PT,& Yayasan{" "}
+            <span className="text-[#0EBCF7]"> Termurah Se Indonesia!</span>{" "}
           </>
         }
         description="Dengan harga mulai dari Rp1 jutaan, 
@@ -66,18 +79,19 @@ export default function PT_CVPage() {
         layanan dijalankan sesuai prosedur hukum dan dikerjakan langsung oleh 
         tim berpengalaman + notaris resmi."
         additionalText2="Kami percaya, setiap pelaku usaha berhak punya legalitas resmi tanpa harus keluar biaya"
-        imageSrc="/pt-cv.png"
-        imageAlt="Woman with food"
+        imageSrc="/hero-pt-cv.png"
+        imageAlt="Women help to make PT"
       />
 
-      {/* Why Halal Section */}
+      {/* Why our Section */}
       <section className="md:py-16 py-10 ">
         <div className="container mx-auto px-4">
           <h2 className="mb-6 text-center md:text-5xl text-[25px] font-bold">
-              Kenapa Harus Bikin PT/CV di <span className="text-[#0EBCF7]">Hakiva?</span>{" "}
+            Kenapa Harus Bikin PT/CV di{" "}
+            <span className="text-[#0EBCF7]">Hakiva?</span>{" "}
           </h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <Card className="p-6 shadow-lg">
+            <Card className="p-6 shadow-lg">
               <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-cyan-100 text-cyan-500">
                 <Image
                   src="/home-1.png"
@@ -88,10 +102,11 @@ export default function PT_CVPage() {
                 />
               </div>
               <h3 className="mb-2 md:text-3xl text-xl font-semibold">
-              Harga Termurah Se Indonesia
+                Harga Termurah Se Indonesia
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-              Legalitas nggak harus mahal. Kami bantu cari paket sesuai kebutuhan dan kondisi kamu.
+                Legalitas nggak harus mahal. Kami bantu cari paket sesuai
+                kebutuhan dan kondisi kamu.
               </p>
             </Card>
             <Card className="p-6 shadow-lg">
@@ -108,10 +123,9 @@ export default function PT_CVPage() {
                 Gratis Konsultasi Tanpa Komitmen
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                Masih bingung mau pilih CV, PT, atau Yayasan? Tenang, 
-                kamu bisa konsultasi dulu GRATIS. Kami bantu analisa 
-                kebutuhan usaha kamu dan kasih saran terbaik. 
-                Tanpa biaya, tanpa paksaan.
+                Masih bingung mau pilih CV, PT, atau Yayasan? Tenang, kamu bisa
+                konsultasi dulu GRATIS. Kami bantu analisa kebutuhan usaha kamu
+                dan kasih saran terbaik. Tanpa biaya, tanpa paksaan.
               </p>
             </Card>
             <Card className="p-6 shadow-lg">
@@ -128,10 +142,9 @@ export default function PT_CVPage() {
                 Aman & Legal
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                Masih bingung mau pilih CV, PT, atau Yayasan? 
-                Tenang, kamu bisa konsultasi dulu GRATIS. 
-                Kami bantu analisa kebutuhan usaha kamu dan 
-                kasih saran terbaik. Tanpa biaya, tanpa paksaan..
+                Masih bingung mau pilih CV, PT, atau Yayasan? Tenang, kamu bisa
+                konsultasi dulu GRATIS. Kami bantu analisa kebutuhan usaha kamu
+                dan kasih saran terbaik. Tanpa biaya, tanpa paksaan..
               </p>
             </Card>
             <Card className="p-6 shadow-lg">
@@ -148,9 +161,8 @@ export default function PT_CVPage() {
                 Transparan & Jelas dari Awal
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                Kamu tahu estimasi waktu & biaya sejak awal. 
-                Nggak ada biaya tersembunyi 
-                atau proses yang ditutup-tutupi.
+                Kamu tahu estimasi waktu & biaya sejak awal. Nggak ada biaya
+                tersembunyi atau proses yang ditutup-tutupi.
               </p>
             </Card>
             <Card className="p-6 shadow-lg">
@@ -167,7 +179,7 @@ export default function PT_CVPage() {
                 Tim Profesional & Ramah
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                Kita ngerti nggak semua orang familiar dengan istilah hukum. 
+                Kita ngerti nggak semua orang familiar dengan istilah hukum.
                 Makanya kami siap jelaskan dengan bahasa yang gampang dipahami.
               </p>
             </Card>
@@ -185,9 +197,8 @@ export default function PT_CVPage() {
                 Sudah Dipercaya Ratusan Klien
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                 Mulai dari pelaku UMKM, freelancer, 
-                 sampai startup. Banyak yang sudah merasakan 
-                 mudahnya ngurus legalitas bareng Hakiva.
+                Mulai dari pelaku UMKM, freelancer, sampai startup. Banyak yang
+                sudah merasakan mudahnya ngurus legalitas bareng Hakiva.
               </p>
             </Card>
           </div>
@@ -198,8 +209,7 @@ export default function PT_CVPage() {
       <section className="md:py-16 py-8 my-10">
         <div className="container mx-auto px-4">
           <h2 className="mb-6 text-center md:text-5xl/[1.2] text-2xl font-bold">
-            Layanan{" "}
-            <span className="text-[#0EBCF7]">Hakiva</span>{" "}
+            Layanan <span className="text-[#0EBCF7]">Hakiva</span>{" "}
           </h2>
           <p className="md:text-lg text-sm text-center mb-8 text-[#5B5B5B]">
             Cuma di tempat kami kamu bisa dapet:
@@ -241,7 +251,6 @@ export default function PT_CVPage() {
         </div>
       </section>
 
-
       {/* Testimonials */}
       <TestimonialSection
         title={
@@ -251,7 +260,6 @@ export default function PT_CVPage() {
         }
         testimonials={testimonials}
       />
-
 
       {/* Pricing */}
       <section className="md:py-16 py-10">
@@ -289,7 +297,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-CV">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -329,11 +337,11 @@ export default function PT_CVPage() {
               <div className="md:mb-10 mb-10 grid grid-cols-2 text-[#47F3FA] grid-cols-[30px_1fr] md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
                 <p>Note :</p>
                 <ol>
-                <li>⁽¹⁾ Setelah client tanda tangan </li>
+                  <li>⁽¹⁾ Setelah client tanda tangan </li>
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-cv-standar">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -375,11 +383,14 @@ export default function PT_CVPage() {
                 <p>Note :</p>
                 <ol>
                   <li>⁽¹⁾ Setelah client tanda tangan </li>
-                  <li>⁽²⁾ Logo akan diberikan seminggu setelah penandatanganan akta notaris</li>
+                  <li>
+                    ⁽²⁾ Logo akan diberikan seminggu setelah penandatanganan
+                    akta notaris
+                  </li>
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-cv-premium">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -399,7 +410,6 @@ export default function PT_CVPage() {
             Pendirian PT (Badan Usaha Mikro)
           </h2>
 
-          
           <div className="grid  lg:grid-cols-2 max-w-[900px] justify-center items-center md:pt-5 grid-cols-[300px] md:grid-cols-[500px] gap-12 mx-auto justify-center ">
             <div className="overflow-hidden  rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
               <h3 className="mb-4 text-center md:text-4xl text-2xl font-semibold">
@@ -428,11 +438,11 @@ export default function PT_CVPage() {
               <div className="md:mb-10 mb-10 grid grid-cols-2 text-[#47F3FA] grid-cols-[30px_1fr] md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
                 <p>Note :</p>
                 <ol>
-                <li>⁽¹⁾ Setelah client tanda tangan </li>
+                  <li>⁽¹⁾ Setelah client tanda tangan </li>
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-PT-standar">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -474,11 +484,14 @@ export default function PT_CVPage() {
                 <p>Note :</p>
                 <ol>
                   <li>⁽¹⁾ Setelah client tanda tangan </li>
-                  <li>⁽²⁾ Logo akan diberikan seminggu setelah penandatanganan akta notaris</li>
+                  <li>
+                    ⁽²⁾ Logo akan diberikan seminggu setelah penandatanganan
+                    akta notaris
+                  </li>
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-PT-premium">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -495,7 +508,7 @@ export default function PT_CVPage() {
         </div>
         <div className="container mx-auto px-4 my-20">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-5xl text-2xl">
-             Paket Pendirian yayasan
+            Paket Pendirian yayasan
           </h2>
           <div className="grid lg:grid-cols-1 max-w-[450px] mx-auto grid-cols-[300px] md:grid-cols-[500px] justify-center ">
             <div className="overflow-hidden rounded-lg bg-[#000E54] md:p-8 p-4 text-white flex flex-col h-full ">
@@ -527,7 +540,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-Yayasan-standar">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -543,7 +556,6 @@ export default function PT_CVPage() {
           </div>
         </div>
       </section>
-
 
       {/* Footer */}
       <Footer />

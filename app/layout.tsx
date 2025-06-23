@@ -10,14 +10,11 @@ const poppins = Poppins({
   display: "swap",
 });
 
-// app/layout.tsx atau app/page.tsx (jika memakai App Router)
 export const metadata = {
   title: "Hakiva - Pendaftaran Merek & HAKI",
   description:
     "Lindungi brand Anda dengan pendaftaran merek resmi. Layanan cepat, murah, dan profesional.",
-  icons: {
-    icon: "/logoHakiva.png", // pastikan file ini ada di public/logoHakiva.png
-  },
+  generator: "v0.dev",
 };
 
 export default function RootLayout({
