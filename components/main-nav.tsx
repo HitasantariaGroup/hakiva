@@ -16,7 +16,7 @@ export function MainNav() {
     { href: "/pt-cv", label: "PT/CV" },
     { href: "/haki", label: "HAKI" },
     { href: "/pirt", label: "PIRT" },
-    { href: "/oss", label: "OSS" },
+    { href: "/nib", label: "NIB" },
     { href: "/halal", label: "Halal" },
   ];
 
@@ -25,15 +25,15 @@ export function MainNav() {
   };
 
   const konsultasiLinks: Record<string, string> = {
-    "/": "https://nanya.online/hakiva-haki",
-    "/pt-cv": "https://nanya.online/hakiva-pt-cv",
+    "/": "https://nanya.online/hakiva-home",
+    "/pt-cv": "https://nanya.online/hakiva-PT,CV,YY",
     "/haki": "https://nanya.online/hakiva-haki",
     "/pirt": "https://nanya.online/hakiva-pirt",
-    "/oss": "https://nanya.online/hakiva-oss",
+    "/nib": "https://nanya.online/hakiva-oss",
     "/halal": "https://nanya.online/hakiva-halal",
   };
   
-  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://nanya.online/hakiva-haki";
+  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://nanya.online/hakiva-home";
   
 
   return (

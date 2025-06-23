@@ -52,12 +52,11 @@ export default function PIRTPage() {
       <HeroSection
         title={
           <>
-            Jualan Makanan Makin Laris, Tapi{" "}
-            <span className="text-[#0EBCF7]">Belum Punya PIRT</span> ?
+            Ingin Produk Kamu Masuk Pasar yang Lebih Luas? Urus PIRTnya Sekarang!
           </>
         }
-        description="Usaha kuliner makin ramai, tapi belum resmi? Pastikan produk makanan Anda terlindungi dengan izin PIRT yang legal!"
-        imageSrc="/pirt.png"
+        description="Apapun jenis produk yang kamu hasilkan, legalitas adalah fondasi utama untuk membangun kepercayaan konsumen dan memperluas jangkauan pasar. Salah satu bentuk legalitas yang penting adalah PIRT.  Izin Produksi dari Dinas Kesehatan yang menjadi bukti bahwa produk kamu aman, layak edar, dan memenuhi standar pemerintah."
+        imageSrc="/hero-pirt.png"
         imageAlt="Woman with food"
       />
 
@@ -170,7 +169,7 @@ export default function PIRTPage() {
             <div className="flex flex-col justify-center">
               <h2 className="mb-6 md:text-5xl/[1.2] text-xl font-bold text-center md:text-left">
                 Kenapa PIRT Itu <span className="text-[#0EBCF7]">Wajib</span>{" "}
-                Buat Usaha Makanan dan Minuman?
+                Buat Usaha Kamu?
               </h2>
               <ul className="space-y-4 md:text-lg text-[#5B5B5B] text-xs mx-auto md:mx-[0px]">
                 <li className="flex items-start">
@@ -310,7 +309,7 @@ export default function PIRTPage() {
                 <li>Pemilihan KBLI sesuai dengan bidang usaha</li>
               </ol>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-pirt-basic">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -353,7 +352,7 @@ export default function PIRTPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-pirt-standar">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -397,7 +396,7 @@ export default function PIRTPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-pirt-Premium">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"

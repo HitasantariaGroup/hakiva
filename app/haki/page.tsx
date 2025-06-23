@@ -49,7 +49,7 @@ export default function HAKIPage() {
         }
         description="Kamu udah capek-capek bangun brand... jangan sampai direbut orang lain cuma karena belum daftar merek."
         imageSrc="/herohaki.png"
-        additionalText="Daftar merek itu bukan cuma formalitas — ini adalah langkah penting buat mengamankan identitas usaha kamu."
+        additionalText="Daftar merek itu bukan cuma formalitas, ini adalah langkah penting buat mengamankan identitas usaha kamu."
         imageAlt="Woman with laptop"
       />
 
@@ -374,10 +374,10 @@ export default function HAKIPage() {
               </h3>
               <div className="md:mb-10 mb-5 text-center">
                 <span className="text-sm line-through text-semibold md:text-3xl">
-                  IDR 2.500.000
+                  IDR 3.800.000
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
-                  IDR 1.795.000
+                  IDR 2.500.000
                 </p>
               </div>
               <p className="md:mb-4 mb-2 md:text-lg text-xs">
@@ -410,7 +410,7 @@ export default function HAKIPage() {
                 </p>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-haki">
+                <Link href="https://nanya.online/hakiva-haki-standar">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -429,10 +429,10 @@ export default function HAKIPage() {
               </h3>
               <div className="md:mb-10 mb-5 text-center">
                 <span className="line-through text-semibold md:text-3xl text-base">
-                  IDR 2.800.000
+                  IDR 4.500.000
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
-                  IDR 1.999.000
+                  IDR 2.950.000
                 </p>
               </div>
               <p className="md:mb-4 mb-2 md:text-lg text-xs">
@@ -469,7 +469,7 @@ export default function HAKIPage() {
                 </p>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-haki">
+                <Link href="https://nanya.online/hakiva-haki-premium">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -521,7 +521,7 @@ export default function HAKIPage() {
 
           {/* CTA Button */}
           <div className="pt-6">
-            <Link href="https://nanya.online/hakiva-haki">
+            <Link href="https://nanya.online/hakiva-haki-4-2">
               <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                 <Image
                   src="/WA.png"

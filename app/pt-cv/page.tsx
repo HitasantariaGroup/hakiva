@@ -1,3 +1,4 @@
+"use client"
 import { MainNav } from "@/components/main-nav";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
@@ -20,6 +21,7 @@ import {
   FileCheck,
 } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function PT_CVPage() {
   const testimonials = [
@@ -31,20 +33,30 @@ export default function PT_CVPage() {
       imageSrc: "/adrik.jpg",
     },
     {
-      name: "Andika",
+      name: "Sastra",
       role: "Founder Startup Edukasi",
       content:
         '"Proses pembuatan PT bersama Hakiva sangat mudah dan cepat. Timnya sangat membantu dan profesional dalam menjelaskan setiap langkahnya. Saya sangat puas dengan pelayanannya."',
       imageSrc: "/sastra.jpg",
     },
     {
-      name: "Maya",
+      name: "Tari",
       role: "Pemilik Toko Kue Online",
       content:
         '"Saya senang banget sama cara tim Hakiva komunikasi. Mereka sabar banget jawab pertanyaan saya. Hasilnya cepat dan rapi"',
       imageSrc: "/tari.jpg",
     },
   ];
+  const pathname = usePathname();
+  const konsultasiLinks: Record<string, string> = {
+    "/": "https://nanya.online/hakiva-home",
+    "/pt-cv": "https://nanya.online/hakiva-PT,CV,YY",
+    "/haki": "https://nanya.online/hakiva-haki",
+    "/pirt": "https://nanya.online/hakiva-pirt",
+    "/oss": "https://nanya.online/hakiva-oss",
+    "/halal": "https://nanya.online/hakiva-halal",
+  };
+  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://nanya.online/hakiva-haki";
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -66,11 +78,11 @@ export default function PT_CVPage() {
         layanan dijalankan sesuai prosedur hukum dan dikerjakan langsung oleh 
         tim berpengalaman + notaris resmi."
         additionalText2="Kami percaya, setiap pelaku usaha berhak punya legalitas resmi tanpa harus keluar biaya"
-        imageSrc="/pt-cv.png"
-        imageAlt="Woman with food"
+        imageSrc="/hero-pt-cv.png"
+        imageAlt="Women help to make PT"
       />
 
-      {/* Why Halal Section */}
+      {/* Why our Section */}
       <section className="md:py-16 py-10 ">
         <div className="container mx-auto px-4">
           <h2 className="mb-6 text-center md:text-5xl text-[25px] font-bold">
@@ -128,10 +140,8 @@ export default function PT_CVPage() {
                 Aman & Legal
               </h3>
               <p className="text-[#5B5B5B] md:text-lg text-sm">
-                Masih bingung mau pilih CV, PT, atau Yayasan? 
-                Tenang, kamu bisa konsultasi dulu GRATIS. 
-                Kami bantu analisa kebutuhan usaha kamu dan 
-                kasih saran terbaik. Tanpa biaya, tanpa paksaan..
+                Semua proses lewat jalur resmi: notaris terdaftar, 
+                sistem OSS, Kemenkumham, dan lembaga terkait.
               </p>
             </Card>
             <Card className="p-6 shadow-lg">
@@ -289,7 +299,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-CV">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -333,7 +343,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-cv-standar">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -379,7 +389,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-cv-premium">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -400,7 +410,49 @@ export default function PT_CVPage() {
           </h2>
 
           
-          <div className="grid  lg:grid-cols-2 max-w-[900px] justify-center items-center md:pt-5 grid-cols-[300px] md:grid-cols-[500px] gap-12 mx-auto justify-center ">
+          <div className="grid  lg:grid-cols-3  justify-center items-center md:pt-5 grid-cols-[300px] md:grid-cols-[500px] gap-10 mx-auto justify-center ">
+            <div className="overflow-hidden  rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
+              <h3 className="mb-4 text-center md:text-4xl text-2xl font-semibold">
+                Paket Basic
+              </h3>
+              <div className="md:mb-10 mb-5 text-center">
+                <span className="text-sm line-through text-semibold md:text-3xl text-base">
+                  IDR 6.500.000
+                </span>
+                <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
+                  IDR 4.000.000
+                </p>
+              </div>
+              <p className="md:mb-4 mb-2 md:text-lg text-xs">
+                Lama proses : 2-4 hari kerja ⁽¹⁾
+              </p>
+              <ol className="md:mb-4 mb-2 list-disc list-inside text-white md:text-base text-[10px]">
+                <li>Pengecekan & Pendaftaran nama PT</li>
+                <li>KBLI Badan Usaha</li>
+                <li>Akta Notaris</li>
+                <li>SK Kemenkumham</li>
+                <li>NPWP Perusahaan</li>
+              </ol>
+              <div className="md:mb-10 mb-10 grid grid-cols-2 text-[#47F3FA] grid-cols-[30px_1fr] md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
+                <p>Note :</p>
+                <ol>
+                <li>⁽¹⁾ Setelah client tanda tangan </li>
+                </ol>
+              </div>
+              <div className="text-center mt-auto">
+                <Link href="https://nanya.online/hakiva-PT-Basic">
+                  <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
+                    <Image
+                      src="/WA.png"
+                      alt="WhatsApp"
+                      width={24.24530029296875}
+                      height={19}
+                    />
+                    Konsultasi Sekarang
+                  </Button>
+                </Link>
+              </div>
+            </div>
             <div className="overflow-hidden  rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
               <h3 className="mb-4 text-center md:text-4xl text-2xl font-semibold">
                 Paket Standar
@@ -432,7 +484,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-PT-standar">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -478,7 +530,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-PT-premium">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -527,7 +579,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt">
+                <Link href="https://nanya.online/hakiva-Yayasan-standar">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
