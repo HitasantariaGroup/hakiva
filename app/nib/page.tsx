@@ -57,7 +57,7 @@ export default function OSSPage() {
             <span className="text-[#0EBCF7]">Belum Punya NIB</span> ?
           </>
         }
-        description="Sekarang bikin usaha nggak cukup cuma modal niat dan produk aja, lho. Usaha kamu juga butuh yang namanya legalitas."
+        description="Sekarang bikin usaha nggak cukup cuma modal niat dan produk aja. Usaha kamu juga butuh yang namanya legalitas."
         imageSrc="/oss.png"
         additionalText="Nah, salah satu legalitas paling dasar dan penting banget buat semua pelaku usaha adalah:"
         imageAlt=""

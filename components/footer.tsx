@@ -39,7 +39,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-[#0EBCF7]">
+                <Link href="/haki" className="hover:text-[#0EBCF7]">
                   HAKI
                 </Link>
               </li>
@@ -49,8 +49,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/oss" className="hover:text-[#0EBCF7]">
-                  OSS
+                <Link href="/nib" className="hover:text-[#0EBCF7]">
+                  NIB
                 </Link>
               </li>
               <li>

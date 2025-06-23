@@ -16,6 +16,7 @@ export default function HomePage() {
   const pathname = usePathname();
   const konsultasiLinks: Record<string, string> = {
     "/": "https://nanya.online/hakiva-home",
+    "/pt-cv": "https://nanya.online/hakiva-PT,CV,YY",
     "/haki": "https://nanya.online/hakiva-haki",
     "/pirt": "https://nanya.online/hakiva-pirt",
     "/oss": "https://nanya.online/hakiva-oss",
@@ -38,7 +39,7 @@ export default function HomePage() {
               SE INDONESIA !!
             </>
           }
-          description="Satu tempat untuk semua kebutuhan legalitas bisnis kamu. Dari pendirian PT/CV,sertifikasi halal,HAKI, hingga OSS dan PIRT."
+          description="Satu tempat untuk semua kebutuhan legalitas bisnis kamu. Dari pendirian PT/CV,sertifikasi halal,HAKI, hingga NIB dan PIRT."
           imageSrc="/home-hero.png"
           additionalText=""
           imageAlt="Hakiva Maskot"
@@ -63,7 +64,7 @@ export default function HomePage() {
                   Hakiva adalah mitra terpercaya dalam pengurusan legalitas usaha Anda.{" "}
                 </h3>
                 <p>
-                  Kami menyediakan layanan lengkap mulai dari pembuatan PT/CV, pendaftaran HAKI, pengurusan izin PIRT, OSS, hingga sertifikasi halal.
+                  Kami menyediakan layanan lengkap mulai dari pembuatan PT/CV, pendaftaran HAKI, pengurusan izin PIRT, NIB, hingga sertifikasi halal.
                   Dengan proses yang mudah, cepat, dan transparan, kami hadir untuk
                   membantu para pelaku usaha, UMKM, dan startup agar dapat
                   berkembang secara legal dan profesional.
@@ -150,7 +151,7 @@ export default function HomePage() {
                   />
                 </div>
                 <h3 className="text-center mb-2 md:text-3xl text-xl font-semibold">
-                  OSS
+                  NIB
                 </h3>
               </div>
             </Card>
