@@ -410,10 +410,10 @@ export default function PT_CVPage() {
             Pendirian PT (Badan Usaha Mikro)
           </h2>
 
-          <div className="grid  lg:grid-cols-2 max-w-[900px] justify-center items-center md:pt-5 grid-cols-[300px] md:grid-cols-[500px] gap-12 mx-auto justify-center ">
+          <div className="grid  lg:grid-cols-3 max-w-[1400px] justify-center items-center md:pt-5 grid-cols-[300px] md:grid-cols-[500px] gap-10 mx-auto justify-center ">
             <div className="overflow-hidden  rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
               <h3 className="mb-4 text-center md:text-4xl text-2xl font-semibold">
-                Paket Standar
+                Paket Basic
               </h3>
               <div className="md:mb-10 mb-5 text-center">
                 <span className="text-sm line-through text-semibold md:text-3xl text-base">
@@ -421,6 +421,48 @@ export default function PT_CVPage() {
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
                   IDR 4.000.000
+                </p>
+              </div>
+              <p className="md:mb-4 mb-2 md:text-lg text-xs">
+                Lama proses : 2-4 hari kerja ⁽¹⁾
+              </p>
+              <ol className="md:mb-4 mb-2 list-disc list-inside text-white md:text-base text-[10px]">
+                <li>Pengecekan & Pendaftaran nama PT</li>
+                <li>KBLI Badan Usaha</li>
+                <li>Akta Notaris</li>
+                <li>SK Kemenkumham</li>
+                <li>NPWP Perusahaan</li>
+              </ol>
+              <div className="md:mb-10 mb-10 grid grid-cols-2 text-[#47F3FA] grid-cols-[30px_1fr] md:grid-cols-[45px_1fr] md:text-xs text-[8px]/[1.5]">
+                <p>Note :</p>
+                <ol>
+                  <li>⁽¹⁾ Setelah client tanda tangan </li>
+                </ol>
+              </div>
+              <div className="text-center mt-auto">
+                <Link href="https://nanya.online/hakiva-PT-standar">
+                  <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
+                    <Image
+                      src="/WA.png"
+                      alt="WhatsApp"
+                      width={24.24530029296875}
+                      height={19}
+                    />
+                    Konsultasi Sekarang
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="overflow-hidden  rounded-lg bg-[#000E54] p-8 text-white flex flex-col h-full">
+              <h3 className="mb-4 text-center md:text-4xl text-2xl font-semibold">
+                Paket Standar
+              </h3>
+              <div className="md:mb-10 mb-5 text-center">
+                <span className="text-sm line-through text-semibold md:text-3xl text-base">
+                  IDR 6.800.000
+                </span>
+                <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
+                  IDR 4.250.000
                 </p>
               </div>
               <p className="md:mb-4 mb-2 md:text-lg text-xs">
@@ -527,7 +569,7 @@ export default function PT_CVPage() {
                 Lama proses : 2-4 hari kerja
               </p>
               <ol className="md:mb-10 mb-10 list-disc list-inside text-white md:text-base text-[9px]">
-                <li>Pengecekan & Pendaftaran nama CV</li>
+                <li>Pengecekan & Pendaftaran nama Yayasan</li>
                 <li>KBLI Badan Usaha</li>
                 <li>Akta Notaris</li>
                 <li>SK Kemenkumham</li>
