@@ -459,7 +459,7 @@ export default function PT_CVPage() {
               </h3>
               <div className="md:mb-10 mb-5 text-center">
                 <span className="text-sm line-through text-semibold md:text-3xl text-base">
-                  IDR 6.500.000
+                  IDR 6.800.000
                 </span>
                 <p className="md:text-5xl text-2xl font-semibold text-[#FFD745]">
                   IDR 4.250.000
