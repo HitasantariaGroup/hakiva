@@ -308,7 +308,7 @@ export default function PIRTPage() {
                 <li>Pemilihan KBLI sesuai dengan bidang usaha</li>
               </ol>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt-basic">
+                <Link href="https://wa.link/nl05rv">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -351,7 +351,7 @@ export default function PIRTPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt-standar">
+                <Link href="https://wa.link/nl05rv">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -395,7 +395,7 @@ export default function PIRTPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-pirt-Premium">
+                <Link href="https://wa.link/nl05rv">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -422,7 +422,7 @@ export default function PIRTPage() {
         }
         description="Jangan tunda lagi perlindungan untuk produk makanan Anda. Daftarkan PIRT sekarang dan dapatkan ketenangan pikiran serta legalitas yang Anda butuhkan untuk mengembangkan bisnis."
         buttonText="Konsultasi Sekarang"
-        href="https://nanya.online/hakiva-pirt"
+        href="https://wa.link/nl05rv"
       />
 
       {/* Footer */}

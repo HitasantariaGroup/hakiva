@@ -15,14 +15,14 @@ import { NavSection } from "@/components/nav-section";
 export default function HomePage() {
   const pathname = usePathname();
   const konsultasiLinks: Record<string, string> = {
-    "/": "https://nanya.online/hakiva-home",
-    "/pt-cv": "https://nanya.online/hakiva-PT,CV,YY",
-    "/haki": "https://nanya.online/hakiva-haki",
-    "/pirt": "https://nanya.online/hakiva-pirt",
-    "/oss": "https://nanya.online/hakiva-oss",
-    "/halal": "https://nanya.online/hakiva-halal",
+    "/": "https://wa.link/ji0ich",
+    "/pt-cv": "https://wa.link/ailg0v",
+    "/haki": "https://wa.link/dod2up",
+    "/pirt": "https://wa.link/nl05rv",
+    "/nib": "https://wa.link/ufqhp7",
+    "/halal": "https://wa.link/g0e3ir",
   };
-  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://nanya.online/hakiva-haki";
+  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://wa.link/ji0ich";
 
 
   return (

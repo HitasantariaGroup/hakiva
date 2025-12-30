@@ -25,17 +25,16 @@ export function MainNav() {
   };
 
   const konsultasiLinks: Record<string, string> = {
-    "/": "https://nanya.online/hakiva-home",
-    "/pt-cv": "https://nanya.online/hakiva-PT,CV,YY",
-    "/haki": "https://nanya.online/hakiva-haki",
-    "/pirt": "https://nanya.online/hakiva-pirt",
-    "/nib": "https://nanya.online/hakiva-oss",
-    "/halal": "https://nanya.online/hakiva-halal",
+    "/": "https://wa.link/ji0ich",
+    "/pt-cv": "https://wa.link/ailg0v",
+    "/haki": "https://wa.link/dod2up",
+    "/pirt": "https://wa.link/nl05rv",
+    "/nib": "https://wa.link/ufqhp7",
+    "/halal": "https://wa.link/g0e3ir",
   };
-  
-  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://nanya.online/hakiva-home";
-  
 
+  const currentKonsultasiLink = konsultasiLinks[pathname] || "https://wa.link/ji0ich";
+  
   return (
     <header className="sticky top-0 z-50 w-full bg-[#000E54] text-white">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
