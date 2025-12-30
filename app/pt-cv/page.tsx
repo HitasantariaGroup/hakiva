@@ -47,17 +47,6 @@ export default function PT_CVPage() {
       imageSrc: "/tari.jpg",
     },
   ];
-  const pathname = usePathname();
-  const konsultasiLinks: Record<string, string> = {
-    "/": "https://nanya.online/hakiva-home",
-    "/pt-cv": "https://nanya.online/hakiva-PT,CV,YY",
-    "/haki": "https://nanya.online/hakiva-haki",
-    "/pirt": "https://nanya.online/hakiva-pirt",
-    "/oss": "https://nanya.online/hakiva-oss",
-    "/halal": "https://nanya.online/hakiva-halal",
-  };
-  const currentKonsultasiLink =
-    konsultasiLinks[pathname] || "https://nanya.online/hakiva-haki";
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -297,7 +286,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-CV">
+                <Link href="https://wa.link/ailg0v">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -341,7 +330,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-cv-standar">
+                <Link href="https://wa.link/ailg0v">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -390,7 +379,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-cv-premium">
+                <Link href="https://wa.link/ailg0v">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -440,7 +429,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-PT-standar">
+                <Link href="https://wa.link/ailg0v">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -484,7 +473,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-PT-standar">
+                <Link href="https://wa.link/ailg0v">
                   <Button className="item-center rounded-full px-4 bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -533,7 +522,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-PT-premium">
+                <Link href="https://wa.link/ailg0v">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -582,7 +571,7 @@ export default function PT_CVPage() {
                 </ol>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-Yayasan-standar">
+                <Link href="https://wa.link/ailg0v">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"

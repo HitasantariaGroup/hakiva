@@ -331,7 +331,7 @@ export default function HAKIPage() {
                 brand Anda.
               </p>
               <div className="text-center md:text-left">
-                <Link href="https://nanya.online/hakiva-haki">
+                <Link href="https://wa.link/dod2up">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 md:text-lg text-xs">
                     <Image
                       src="/WA.png"
@@ -410,7 +410,7 @@ export default function HAKIPage() {
                 </p>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-haki-standar">
+                <Link href="https://wa.link/dod2up">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -469,7 +469,7 @@ export default function HAKIPage() {
                 </p>
               </div>
               <div className="text-center mt-auto">
-                <Link href="https://nanya.online/hakiva-haki-premium">
+                <Link href="https://wa.link/dod2up">
                   <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                     <Image
                       src="/WA.png"
@@ -521,7 +521,7 @@ export default function HAKIPage() {
 
           {/* CTA Button */}
           <div className="pt-6">
-            <Link href="https://nanya.online/hakiva-haki-4-2">
+            <Link href="https://wa.link/dod2up">
               <Button className="item-center px-4 rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 text-[#000E54] hover:bg-blue-600 text-xs">
                 <Image
                   src="/WA.png"
@@ -546,7 +546,7 @@ export default function HAKIPage() {
         }
         description="Kalau kamu udah mantap, tinggal klik tombol di bawah ini. Kami siap bantu urus semuanya dari A sampai Z. Mulai dari pengecekan, pengajuan, sampai merek kamu resmi terdaftar di HAKI."
         buttonText="Konsultasi Sekarang"
-        href="https://nanya.online/hakiva-haki"
+        href="https://wa.link/dod2up"
       />
 
       {/* Footer */}

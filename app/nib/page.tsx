@@ -414,7 +414,7 @@ export default function OSSPage() {
                 IDR 250.000
               </h3>
               <div className="text-center md:text-left">
-                <Link href="https://nanya.online/hakiva-oss">
+                <Link href="https://wa.link/ufqhp7">
                   <Button className="item-center rounded-full bg-gradient-to-r from-cyan-300 to-sky-500 px-4 text-[#000E54] hover:bg-blue-600 md:text-lg text-xs">
                     <Image
                       src="/WA.png"
